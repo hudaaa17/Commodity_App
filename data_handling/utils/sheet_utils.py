@@ -11,7 +11,7 @@ def get_credentials():
     
     # Try Streamlit secrets first, fall back to env var
     try:
-        creds_dict = st.secrets["gcp_service_account"]
+        creds_dict = st.secrets["GCP_SERVICE_ACCOUNT"]
     except Exception:
         creds_json = os.getenv("GCP_SERVICE_ACCOUNT")
         if not creds_json:
