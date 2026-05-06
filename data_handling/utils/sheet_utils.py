@@ -1,6 +1,10 @@
 from googleapiclient.discovery import build
 from google.oauth2.service_account import Credentials
+from dotenv import load_dotenv
+load_dotenv()
 
+import os
+import json
 
 def get_credentials():
     import streamlit as st
