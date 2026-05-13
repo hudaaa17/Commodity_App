@@ -9,6 +9,8 @@ COMMODITY_TITLE_MAP = {
     "Rubber":     "Natural Rubber (RSS4)",
     "Cpo":        "Crude Palm Oil",
     "Brentcrude": "Brent Crude",
+    "Silicon": "Silicon",
+    "Polyurethane": "Polyurethane"
 }
 
 def get_usd_to_inr() -> float:
