@@ -342,6 +342,8 @@ COMMODITY_DISPLAY = {
     "Crude Palm Oil":               {"key": "Crude Palm Oil",       "derived": False},
     "Crude Oil Indian Basket":      {"key": "Crude Oil (Indian Basket)", "derived": False},
     "Brent Crude":                  {"key": "Brent Crude",          "derived": False},
+    "Polyurethane":                 {"key": "Polyurethane", "derived": False},
+    "Silicon":                      {"key": "Silicon", "derived":False}
 }
 
 # Mapping from display name → RecursiveForecast column name
@@ -353,6 +355,8 @@ FORECAST_COL_MAP = {
     "Crude Palm Oil":                "Crude Palm Oil",
     "Crude Oil Indian Basket":       "Crude Oil Indian Basket",  # 
     "Brent Crude":                   "Brent Crude",
+    "Polyurethane":                  "Polyurethane",
+    "Silicon":                       "Silicon"
 }
 
 
