@@ -445,7 +445,7 @@ def get_forecast_fig(display_name, training_sheet_id):
     if col is None:          # ← this only triggers if value IS None
         return None          #    
     try:
-        fig = run_trend_pipeline(col, training_sheet_id)
+        fig = run_trend_pipeline(col, training_sheet_id, display_name)
         return fig
     except Exception:
         return None          # ← if data isn't in sheet yet, returns None gracefully
