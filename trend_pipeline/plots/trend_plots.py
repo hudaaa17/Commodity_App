@@ -4,8 +4,8 @@ import requests
 
 COMMODITY_TITLE_MAP = {
     "Zinc":       "Zinc Metal",
-    "Zincdross":  "Zinc Dross",
-    "Zincoxide":  "Zinc Oxide",
+    "Zincdross":  "Zinc Oxide", # ---> Changed for time being
+    #"Zincoxide":  "Zinc Oxide",
     "Rubber":     "Natural Rubber (RSS4)",
     "Cpo":        "Crude Palm Oil",
     "Brentcrude": "Brent Crude",
