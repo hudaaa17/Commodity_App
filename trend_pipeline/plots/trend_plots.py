@@ -99,7 +99,7 @@ def plot_trend(df, commodity, display_name=None):
             line_width=1,
             line_dash="dot"
         )
-    title_name = display_name if display_name else commodity
+    title_name = "Zinc Oxide" if commodity == "Zinc Dross" else commodity
     # ----------------------------
     # Layout (professional look)
     # ----------------------------
