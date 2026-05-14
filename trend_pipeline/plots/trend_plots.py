@@ -26,7 +26,7 @@ def get_usd_to_inr() -> float:
         return 84.0  # fallback rate
 
 
-def plot_trend(df, commodity):
+def plot_trend(df, commodity, display_name=None):
     """
     Professional interactive trend chart
 
@@ -99,7 +99,7 @@ def plot_trend(df, commodity):
             line_width=1,
             line_dash="dot"
         )
-
+    title_name = display_name if display_name else commodity
     # ----------------------------
     # Layout (professional look)
     # ----------------------------
