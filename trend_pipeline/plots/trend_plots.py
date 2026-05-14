@@ -105,7 +105,7 @@ def plot_trend(df, commodity, display_name=None):
     # ----------------------------
     fig.update_layout(
         title=dict(
-        text=f"{commodity} — 30 Day Price Forecast",
+        text=f"{title_name} — 30 Day Price Forecast",
         font=dict(
             color="rgba(255, 255, 255, 0.95)",
             size=14,
