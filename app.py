@@ -334,10 +334,42 @@ SCOPE = [
     "https://www.googleapis.com/auth/drive"
 ]
 
+
+# ---------------- Original column mappings --------------------------------------
+#COMMODITY_DISPLAY = {
+#    "Zinc Metal":                   {"key": "Zinc Metal",           "derived": False},
+#    "Zinc Dross":                   {"key": "Zinc Dross",           "derived": True},
+#    "Zinc Oxide":                   {"key": "Zinc Oxide",           "derived": True},
+#    "Natural Rubber (India - RSS4)":{"key": "Natural Rubber (India - RSS4)", "derived": False},
+#    "Crude Palm Oil":               {"key": "Crude Palm Oil",       "derived": False},
+#    "Crude Oil Indian Basket":      {"key": "Crude Oil (Indian Basket)", "derived": False},
+#    "Brent Crude":                  {"key": "Brent Crude",          "derived": False},
+#    "Polyurethane":                 {"key": "Polyurethane", "derived": False},
+#    "Silicon":                      {"key": "Silicon", "derived":False}
+#}
+
+# Mapping from display name → RecursiveForecast column name
+#FORECAST_COL_MAP = {
+#    "Zinc Metal":                    "Zinc Metal",
+#    "Zinc Dross":                    "Zinc Dross",
+#    "Zinc Oxide":                    "Zinc Oxide",
+#    "Natural Rubber (India - RSS4)": "Natural Rubber (RSS4)",
+#    "Crude Palm Oil":                "Crude Palm Oil",
+#    "Crude Oil Indian Basket":       "Crude Oil Indian Basket",  # 
+#    "Brent Crude":                   "Brent Crude",
+#    "Polyurethane":                  "Polyurethane",
+#    "Silicon":                       "Silicon"
+#}
+
+
+# --------------------------------------------------------------
+
+# -----------------------Temporary col mappings ---------------------
+
+
 COMMODITY_DISPLAY = {
     "Zinc Metal":                   {"key": "Zinc Metal",           "derived": False},
-    "Zinc Dross":                   {"key": "Zinc Dross",           "derived": True},
-    "Zinc Oxide":                   {"key": "Zinc Oxide",           "derived": True},
+    "Zinc Oxide":                   {"key": "Zinc Dross",           "derived": True},
     "Natural Rubber (India - RSS4)":{"key": "Natural Rubber (India - RSS4)", "derived": False},
     "Crude Palm Oil":               {"key": "Crude Palm Oil",       "derived": False},
     "Crude Oil Indian Basket":      {"key": "Crude Oil (Indian Basket)", "derived": False},
@@ -346,19 +378,19 @@ COMMODITY_DISPLAY = {
     "Silicon":                      {"key": "Silicon", "derived":False}
 }
 
-# Mapping from display name → RecursiveForecast column name
 FORECAST_COL_MAP = {
     "Zinc Metal":                    "Zinc Metal",
-    "Zinc Dross":                    "Zinc Dross",
-    "Zinc Oxide":                    "Zinc Oxide",
+    "Zinc Oxide":                    "Zinc Dross",
     "Natural Rubber (India - RSS4)": "Natural Rubber (RSS4)",
     "Crude Palm Oil":                "Crude Palm Oil",
-    "Crude Oil Indian Basket":       "Crude Oil Indian Basket",  # 
+    "Crude Oil Indian Basket":       "Crude Oil Indian Basket",  
     "Brent Crude":                   "Brent Crude",
     "Polyurethane":                  "Polyurethane",
     "Silicon":                       "Silicon"
 }
 
+
+# ----------------------------------------------------------------------------
 
 @st.cache_data(ttl=3600, show_spinner=False)
 def load_raw_data():
