@@ -3,7 +3,7 @@ from trend_pipeline.processors.prepare_series import get_commodity_series
 from trend_pipeline.plots.trend_plots import plot_trend
 
 
-def run_trend_pipeline(commodity, spreadsheet_id):
+def run_trend_pipeline(commodity, spreadsheet_id, fx_rate=84.0, display_name=None):
     """
     End-to-end trend pipeline for ONE commodity
 
@@ -37,6 +37,6 @@ def run_trend_pipeline(commodity, spreadsheet_id):
     # ----------------------------
     # 3. Plot chart
     # ----------------------------
-    fig = plot_trend(df_c, commodity)
+    fig = plot_trend(df_c, commodity, display_name=display_name)
 
     return fig
